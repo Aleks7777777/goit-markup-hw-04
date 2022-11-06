@@ -9,7 +9,9 @@
 .section {
   padding: 94px 0;
 }
-
+.icon {
+  fill: currentColor;
+}
 body {
   background-color: var(--colff--white);
   color: var(--col--black);
@@ -225,6 +227,22 @@ button {
   gap: 30px;
 }
 
+.item-icon {
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+.item-icon .icon {
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+
+.features .title {
+  margin-bottom: 10px;
+}
 /*!our_company*/
 
 .company {
@@ -257,6 +275,28 @@ button {
   background-color: var(--colff--white);
 }
 
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.social-item {
+  padding-bottom: 30px;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--colff--white);
+  background-color: var(--col--blue);
+}
 /*!footer*/
 
 .footer {
@@ -304,6 +344,46 @@ button {
 .contact-footer .link.link:focus {
   color: var(--col--blue);
   font-style: normal;
+}
+.footer-title {
+  font-family: "Roboto";
+  font-style: normal;
+  color: var(--colff--white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-linki:focus,
+.social-linki:hover {
+  color: var(--colff--white);
+  background-color: var(--col--blue);
+}
+
+.social-linki {
+  color: var(--colff--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer-social {
+  border-radius: 50%;
+  background-color: var(--col--lgrey);
+}
+
+.footer-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 /* ?portfolio.html */

@@ -1,0 +1,390 @@
+:root {
+  --col--black: #212121;
+  --col--lgrey: #757575;
+  --col--blue: #2196f3;
+  --col--grey: #2f303a;
+  --colf5--white: #f5f5f5;
+  --colff--white: #ffffff;
+}
+.section {
+  padding: 94px 0;
+}
+
+body {
+  background-color: var(--colff--white);
+  color: var(--col--black);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*!----------------------------*/
+
+/* !header */
+
+.logo {
+  color: var(--col--blue);
+  font-size: 26px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2;
+  vertical-align: Top;
+}
+
+.logo-part {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 93px;
+}
+
+.link {
+  color: var(--col--black);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.container .contact {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.nav-top {
+  display: inline-block;
+  align-items: center;
+}
+
+/* !menu*/
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.menu-list .linklu:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-list .link:hover,
+.menu-list .link:focus {
+  color: var(--col--blue);
+}
+
+.menu-list .link.current {
+  color: var(--col--blue);
+}
+.contact {
+  margin-right: auto;
+}
+.contact .link {
+  color: var(--col--black);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact .link:focus,
+.contact .link:hover {
+  color: var(--col--blue);
+  text-decoration: none;
+}
+.contact .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/*!cap*/
+.cap {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0;
+  background-image: url(../images/backround.jpg);
+}
+
+.cap-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 670px;
+  color: var(--colff--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.button-order {
+  color: var(--colff--white);
+  background-color: var(--col--blue);
+  border-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 216px;
+  min-height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  display: block;
+}
+
+/*!features*/
+
+.features {
+  display: flex;
+  gap: 30px;
+}
+
+.features-section {
+  background-color: var(--colff--white);
+  padding-bottom: 0;
+}
+.section .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features .title-text {
+  color: var(--col--lgrey);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.work {
+  display: flex;
+  gap: 30px;
+}
+
+/*!our_company*/
+
+.company {
+  display: flex;
+  gap: 30px;
+}
+/*.our-company {
+}*/
+
+.our-company .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 30px;
+}
+.company-container {
+  background-color: #f5f4fa;
+}
+
+.our-company .title-text {
+  color: var(--col--lgrey);
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.company-jpg {
+  background-color: var(--colff--white);
+}
+
+/*!footer*/
+
+.footer {
+  background-color: var(--col--grey);
+}
+
+.footer .logo-part {
+  color: var(--colff--white);
+  text-decoration: none;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address-link {
+  color: var(--colff--white);
+  font-style: normal;
+  text-decoration: none;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--col--blue);
+}
+
+.contact-footer .link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.contact-footer .contact-linck:not(:last-child) {
+  margin: 9px 0;
+}
+
+.contact-footer .link.link:hover,
+.contact-footer .link.link:focus {
+  color: var(--col--blue);
+  font-style: normal;
+}
+
+/* ?portfolio.html */
+
+/*!filter*/
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--col--blue);
+  color: #f5f4fa;
+}
+
+.main-btn {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.filter-btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  color: var(--col--black);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+
+.portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.portfolio .title-text {
+  color: var(--col--lgrey);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 30px;
+}
+.portfolio img {
+  display: block;
+}
+.portfolio-link {
+  text-decoration: none;
+}
+.footer {
+  padding: 60px 0;
+}
+
+.port-text {
+  color: var(--colff--white);
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.port-text .title {
+  color: var(--col--black);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.port-text .title-text {
+  color: var(--col--lgrey);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}

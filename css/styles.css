@@ -157,6 +157,7 @@ button {
 }
 
 /*!cap*/
+
 .cap {
   max-width: 1600px;
   margin-left: auto;
@@ -250,14 +251,13 @@ button {
 .features .title {
   margin-bottom: 10px;
 }
+
 /*!our_company*/
 
 .company {
   display: flex;
   gap: 30px;
 }
-/*.our-company {
-}*/
 
 .our-company .title {
   font-weight: 500;
@@ -304,7 +304,9 @@ button {
   color: var(--colff--white);
   background-color: var(--col--blue);
 }
+
 /*!customers*/
+
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -313,31 +315,34 @@ button {
   letter-spacing: 0.03em;
 }
 .customers-list {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
-   flex-wrap: nowrap;
 }
 
 .customers-link:hover,
 .customers-link:focus {
   color: var(--col--blue);
+  border-color: var(--col--blue);
+}
+
+.customers-title {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .customers-link {
-	color:  #AFB1B8;;
-	 border-radius: 4px;
-  padding: 6px 22px;
-  margin-bottom: 50px;
-	
+  color: #afb1b8;
 }
-.customers-icon {
-	background-color: var(--colf5--white);
-	 border-radius: 4px;
-  padding: 6px 22px;
-  margin-bottom: 50px;
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--colf5--white);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /*!footer*/
@@ -354,8 +359,8 @@ button {
 .footer .logo {
   display: block;
   margin-bottom: 20px;
+  padding-top: 54px;
 }
-
 .address-link {
   color: var(--colff--white);
   font-style: normal;
@@ -393,10 +398,6 @@ button {
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.03em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 .social-linki:focus,
@@ -413,10 +414,6 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
-
-.footer-social {
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -427,11 +424,12 @@ button {
 }
 
 .footer-svg {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   margin-left: 70px;
 }
 
-
-}
 /* ?portfolio.html */
 
 /*!filter*/

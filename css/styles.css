@@ -99,6 +99,8 @@ button {
 
 .container .contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: 0;
 }
@@ -139,7 +141,7 @@ button {
   margin-right: auto;
 }
 .contact .link {
-  color: var(--col--black);
+  color: var(--col--lgrey);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -265,12 +267,16 @@ button {
   gap: 30px;
 }
 
+.our-company {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .our-company .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  padding-top: 30px;
 }
 .company-container {
   background-color: #f5f4fa;
@@ -282,7 +288,7 @@ button {
   line-height: 1.2;
   text-align: center;
   margin-top: 10px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .company-jpg {
   background-color: var(--colff--white);
@@ -304,9 +310,7 @@ button {
   border-radius: 50%;
   color: #afb1b8;
 }
-.social-item {
-  padding-bottom: 30px;
-}
+
 .social-link:hover,
 .social-link:focus {
   color: var(--colff--white);

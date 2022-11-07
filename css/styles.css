@@ -163,7 +163,13 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
-  background-image: url(../images/backround.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/backround.jpg);
+  background-size: cover;
 }
 
 .cap-title {
@@ -280,6 +286,8 @@ button {
 }
 .company-jpg {
   background-color: var(--colff--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .social-list {
@@ -332,6 +340,7 @@ button {
 
 .customers-link {
   color: #afb1b8;
+  background-color: var(--colff--white);
 }
 
 .customers-link {
@@ -340,7 +349,7 @@ button {
   align-items: center;
   width: 170px;
   height: 92px;
-  background-color: var(--colf5--white);
+  background-color: var(--colff--white);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -351,16 +360,22 @@ button {
   background-color: var(--col--grey);
 }
 
+.footer-container {
+  display: flex;
+  gap: 70px;
+  padding: 54px 0;
+}
+
 .footer .logo-part {
   color: var(--colff--white);
   text-decoration: none;
 }
 
 .footer .logo {
-  display: block;
+  display: flex;
   margin-bottom: 20px;
-  padding-top: 54px;
 }
+
 .address-link {
   color: var(--colff--white);
   font-style: normal;
@@ -376,6 +391,7 @@ button {
 
 .contact-footer .link {
   color: rgba(255, 255, 255, 0.6);
+
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -392,12 +408,18 @@ button {
   color: var(--col--blue);
   font-style: normal;
 }
+
 .footer-title {
+  font-style: normal;
+  font-family: "Raleway";
   color: var(--colff--white);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 12px;
+  margin-bottom: 20px;
 }
 
 .social-linki:focus,
@@ -417,19 +439,6 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-list {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
-.footer-svg {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-left: 70px;
-}
-
 /* ?portfolio.html */
 
 /*!filter*/
@@ -438,6 +447,9 @@ button {
 .filter-btn:focus {
   background-color: var(--col--blue);
   color: #f5f4fa;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-btn {
@@ -468,7 +480,10 @@ button {
   font-size: 18px;
   line-height: 2;
 }
-
+.footer-list {
+  display: flex;
+  gap: 10px;
+}
 .portfolio .title-text {
   color: var(--col--lgrey);
   font-size: 16px;

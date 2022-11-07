@@ -460,6 +460,9 @@ button {
   flex-wrap: nowrap;
 }
 
+.зф {
+}
+
 .filter-btn {
   border-radius: 4px;
   padding: 6px 22px;
@@ -523,4 +526,10 @@ button {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+}
+
+.port-title:hover,
+.port-title:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
